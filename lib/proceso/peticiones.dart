@@ -7,8 +7,8 @@ class peticiones_bases_datos {
   static Future<void> Crear_Tabla(sql_libreria.Database baseDeDatos) async {
     // se crea la instruccion para crear una tabla a travez del metodo "Crear_Tabla"
     await baseDeDatos.execute(""" CREATE TABLE posiciones(
-      id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL
-      coordenadas TEXT
+      id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+      coordenadas TEXT,
       fecha TEXT
     )""");
   }
