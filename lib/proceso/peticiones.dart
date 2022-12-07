@@ -17,9 +17,9 @@ class peticiones_bases_datos {
     // se crea la instruccion para la creación de la base de datos.
     return sql_libreria
         .openDatabase("Base_datos_geolocalización.db", version: 1,
-            onCreate: (sql_libreria.Database BaseDatos, int version) async {
+            onCreate: (sql_libreria.Database baseDatos, int version) async {
       // dentro de la base de datos, se crea el metodo "On Create" el cual trae el metodo de crear tabla dentro de la creación de la base de datos
-      await Crear_Tabla(BaseDatos);
+      await Crear_Tabla(baseDatos);
     });
   }
 
@@ -31,11 +31,11 @@ class peticiones_bases_datos {
     return variable_conexion_base_datos.query("posiciones", orderBy: "fecha");
   }
 
-  static Future<void> eliminar_datos(int ID_Posicion) async {
+  static Future<void> eliminar_datos(int id_Posicion) async {
     final variable_conexion_base_datos = await peticiones_bases_datos
         .crear_base_datos(); // conexion a la base de datos, si no encuentra una base de datos, la crea
     variable_conexion_base_datos.delete("posiciones", where: "id?", whereArgs: [
-      ID_Posicion
+      id_Posicion
     ]); // la instruccion a la base de datos es que consulte el campo "id", y cuando encuentre este parametro de acuerdo a la variable "ID_posicion" indicada, que eliminine los datos de esa fila
   }
 
