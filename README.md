@@ -15,4 +15,4 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-Para ver la demo del aplicativo, por favor dirigirse a https://uninorte-my.sharepoint.com/:f:/g/personal/prietow_uninorte_edu_co/EhthHbJ0aedKiS1HeCImdDUBKn0aWryDiujqysrSOPv4aQ?e=arWLDp. Muchas Gracias!
+Para ver la demo del aplicativo, por favor dirigirse a https://uninorte-my.sharepoint.com/:f:/g/personal/prietow_uninorte_edu_co/EhthHbJ0aedKiS1HeCImdDUBKn0aWryDiujqysrSOPv4aQ?e=arWLDp, asi mismo, se ha dado acceso a Daniel Carrillo de manera directa para acceder al video. Muchas Gracias!
